@@ -1,0 +1,10 @@
+#delete {
+  background-color: red;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+}
+.table td {
+  padding: 0;
+}

@@ -1,0 +1,36 @@
+.task {
+  overflow: hidden;
+}
+.task-img {
+  position: relative;
+}
+
+.task-name {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: white;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Montserrat";
+}
+
+.task:nth-child(5n + 1) .task-name {
+  background-color: #3f90fc;
+}
+
+.task:nth-child(5n + 2) .task-name {
+  background-color: #ff7044;
+}
+.task:nth-child(5n + 3) .task-name {
+  background-color: #ffbd3e;
+}
+.task:nth-child(5n + 4) .task-name {
+  background-color: #421fcf;
+}
+.task:nth-child(5n + 5) .task-name {
+  background-color: #1fcf5a;
+}

@@ -1,0 +1,12 @@
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+ul li {
+  padding: 5px;
+}
+
+#admin ul li img {
+  height: 20px;
+}

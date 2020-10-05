@@ -11,7 +11,7 @@ const Register = () => {
   const { register, handleSubmit, reset, errors } = useForm();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/events/${eventId}`)
+    fetch(`https://my-volunteer-network.herokuapp.com/events/${eventId}`)
       .then((res) => res.json())
       .then((event) => setEvent(event))
       .catch((error) => error && alert("Data not found"));
@@ -28,7 +28,7 @@ const Register = () => {
       event,
     };
 
-    fetch("http://localhost:5000/volunteer/registration", {
+    fetch("https://my-volunteer-network.herokuapp.com/volunteer/registration", {
       method: "POST",
       body: JSON.stringify(newEvent),
       headers: {

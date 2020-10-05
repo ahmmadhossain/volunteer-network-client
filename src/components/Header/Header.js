@@ -35,7 +35,6 @@ const Header = () => {
                   <Button variant="primary">{loggedInUser.name}</Button>
                 </Link>
               ) : (
-                // <p>{loggedInUser.name}</p>
                 <Link to="/login" className="nav-link">
                   <Button variant="primary">Register</Button>
                 </Link>

@@ -106,7 +106,7 @@ const AddEvents = () => {
   ];
 
   const addEvents = () => {
-    fetch("http://localhost:5000/addevents", {
+    fetch("https://my-volunteer-network.herokuapp.com/addevents", {
       method: "POST",
       body: JSON.stringify(allEvents),
       headers: {

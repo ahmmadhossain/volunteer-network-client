@@ -5,14 +5,14 @@ import VolunteerList from "./VolunteerList";
 const VolunteerLists = () => {
   const [volunteers, setVolunteers] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/volunteer/lists")
+    fetch("https://my-volunteer-network.herokuapp.com/volunteer/lists")
       .then((res) => res.json())
       .then((events) => setVolunteers(events))
       .catch(() => alert("Something is wrong"));
   }, []);
 
   const deleteEvent = (id) => {
-    fetch("http://localhost:5000/volunteer/event/delete", {
+    fetch("https://my-volunteer-network.herokuapp.com/volunteer/event/delete", {
       method: "DELETE",
       body: JSON.stringify({ id }),
       headers: {
